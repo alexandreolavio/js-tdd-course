@@ -4,6 +4,7 @@
   "description": "Curso de JS com TDD na prática Udemy.",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/app/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   },
   "homepage": "https://github.com/alexandreolavio/js-tdd-course#readme",
   "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.6.1"
   }
 }
