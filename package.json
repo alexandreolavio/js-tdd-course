@@ -6,7 +6,10 @@
   "scripts": {
     "build": "./node_modules/.bin/babel --out-dir dist src/app",
     "build:watch": "npm run build -- --watch",
-    "lint": "./node_modules/.bin/eslint src/app/*.js"
+    "lint": "./node_modules/.bin/eslint src/app/*.js",
+    "test": "./node_modules/.bin/mocha src/test/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha src/test/**/*.spec.js --require babel-register --watch",
+    "test:coverage": "nyc npm test"
   },
   "nyc": {
     "reporter": [
