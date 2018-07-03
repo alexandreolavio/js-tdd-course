@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clear": "rimraf dist",
-    "build": "./node_modules/.bin/babel --out-dir dist src/app",
+    "build": "npm run clear && ./node_modules/.bin/babel --out-dir dist src/app",
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/app/*.js",
     "prepush": "npm run lint",
